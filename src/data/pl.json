@@ -2,5 +2,92 @@
   "name": "Marcin Jędrzejewski",
   "birthdate": "1991-01-30T13:00:00.000Z",
   "email": "jedrzejewski.marcin@gmail.com",
-  "phone": "+48 794 792 954"
+  "phone": "+48 794 792 954",
+  "experience": {
+    "title": "Doświadczenie",
+    "entries": [
+      {
+        "start": "2020",
+        "end": "2022",
+        "company": "Packhelp",
+        "job": "Senior Software Engineer",
+        "description": [
+          {
+            "type": "div",
+            "children": "Rozwój platformy backofficowej realizującej zadania z zakresu SCM i CRM."
+          },
+          {
+            "type": "div",
+            "children": "Rozwój aplikacji do projektowania wykrojników opakowań."
+          },
+          {
+            "type": "div",
+            "children": "Rozwój aplikacji wewnętrznych organizacji."
+          }
+        ]
+      },
+      {
+        "start": "2020",
+        "end": "obecnie",
+        "company": "municypalne.pl",
+        "job": "Fullstack Developer",
+        "description": "Przygotowanie infrastruktury, realizacja i utrzymanie portalu o finansach jednostek samorządu terytorialnego."
+      },
+      {
+        "start": "2019",
+        "end": "2020",
+        "company": "Pragmatic Coders",
+        "job": "Frontend/Fullstack Developer",
+        "description": ""
+      },
+      {
+        "start": "2016",
+        "end": "2019",
+        "company": "Sportradar",
+        "job": "Frontend Developer",
+        "description": "Rozwój aplikacji dostarczających statystyki sportowe."
+      },
+      {
+        "start": "2015",
+        "end": "2015",
+        "company": "Moongorilla",
+        "job": "Adobe CEP Developer",
+        "description": "Realizacja pluginu dla grafików do programu Adobe Photoshop."
+      },
+      {
+        "start": "2014",
+        "end": "2014",
+        "company": "IVES-System",
+        "job": "Web Developer",
+        "description": [
+          {
+            "type": "div",
+            "children": "Realizacja interfejsów administracyjnych w rządowej platformie &quot;Projekt P1&quot; we współpracy z Unizeto Technologies."
+          },
+          {
+            "type": "div",
+            "children": "Rozwój i utrzymanie serwisu eDoktor24.pl."
+          },
+          {
+            "type": "div",
+            "children": "Rozwój aplikacji wewnętrznych organizacji."
+          }
+        ]
+      },
+      {
+        "start": "2012",
+        "end": "2014",
+        "company": "MyWorks",
+        "job": "Web Developer",
+        "description": "Samodzielna i zespołowa realizacja projektów stron internetowych opartych na systemie WordPress."
+      },
+      {
+        "start": "2012",
+        "end": "2014",
+        "company": "freelance",
+        "job": "Web Developer",
+        "description": "Samodzielna i zespołowa realizacja projektów stron internetowych opartych na autorskich rozwiązaniach."
+      }
+    ]
+  }
 }

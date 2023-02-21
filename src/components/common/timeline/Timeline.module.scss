@@ -1,0 +1,56 @@
+@use 'styles/colors.scss' as colors;
+
+.timeline {
+  display: grid;
+  grid-template: 'date description' auto / min-content auto;
+  font-size: 1.4rem;
+
+  > * {
+    padding-bottom: 1.5rem;
+  }
+
+  .date {
+    text-align: right;
+    font-weight: 500;
+    position: relative;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    border-right: solid 0.4rem colors.$secondary;
+
+    &:last-of-type {
+      border-image: linear-gradient(
+          to bottom,
+          colors.$secondary 0%,
+          colors.$secondary 50%,
+          colors.$background 100%
+        )
+        1 100%;
+    }
+
+    &::after {
+      content: '';
+      box-sizing: content-box;
+      overflow: hidden;
+      width: 0.4rem;
+      height: 0.4rem;
+      background: white;
+      border: solid colors.$secondary 0.4rem;
+      border-radius: 50%;
+      position: absolute;
+      right: -0.8rem;
+      top: 0.3rem;
+      overflow: hidden;
+      font-size: 0;
+      line-height: 0rem;
+      display: inline-block;
+    }
+
+    .separator {
+      color: colors.$secondary;
+    }
+
+    div {
+      white-space: nowrap;
+    }
+  }
+}

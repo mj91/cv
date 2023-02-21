@@ -1,0 +1,25 @@
+.experience {
+  h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  .entry {
+    position: relative;
+    top: -0.2rem;
+
+    > strong {
+      font-size: 1.8rem;
+    }
+
+    > i {
+      font-size: 1.6rem;
+      font-weight: 300;
+    }
+
+    > div {
+      font-size: 1.4rem;
+      margin: 0.3rem 0;
+    }
+  }
+}
