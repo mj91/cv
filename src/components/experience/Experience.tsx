@@ -26,7 +26,10 @@ const createExperienceEntryDescriptionElement = (
 
   if (typeof description === 'string') return <>{description}</>
 
-  if (!Array.isArray(description) && description.type)
+  if (Array.isArray(description))
+    return <>{description.map(createExperienceEntryDescriptionElement)}</>
+
+  if (description.type)
     return createElement(
       description.type,
       description.props,
@@ -36,26 +39,6 @@ const createExperienceEntryDescriptionElement = (
     )
 
   return null
-}
-
-const ExperienceEntryDescription = ({
-  description,
-}: {
-  description?: ExperienceDescription | ExperienceDescription[]
-}) => {
-  if (Array.isArray(description))
-    return (
-      <>
-        {description.map((nestedDescription, index) => (
-          <ExperienceEntryDescription
-            key={index}
-            description={nestedDescription}
-          />
-        ))}
-      </>
-    )
-
-  return createExperienceEntryDescriptionElement(description)
 }
 
 export const Experience = () => {
@@ -70,7 +53,7 @@ export const Experience = () => {
             <div className={styles.entry}>
               <strong>{entry.company}</strong> <i>{entry.job}</i>
               <div>
-                <ExperienceEntryDescription description={entry.description} />
+                {createExperienceEntryDescriptionElement(entry.description)}
               </div>
             </div>
           </TimelineItem>
