@@ -10,7 +10,7 @@ export const Header = () => {
       <h1>{data.name}</h1>
       <div>
         ⭐{' '}
-        {new Date('01/30/1991').toLocaleDateString(navigator.language, {
+        {new Date(data.birthdate).toLocaleDateString(navigator.language, {
           dateStyle: 'long',
         })}
       </div>
