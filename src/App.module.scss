@@ -1,0 +1,30 @@
+.content {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template:
+    'header header' min-content
+    'experience skills' min-content
+    'education skills' auto
+    'consent consent' min-content / 1fr 1fr;
+
+  > :nth-child(1) {
+    grid-area: header;
+  }
+
+  > :nth-child(2) {
+    grid-area: experience;
+  }
+
+  > :nth-child(3) {
+    grid-area: education;
+  }
+
+  > :nth-child(4) {
+    grid-area: skills;
+  }
+
+  > :nth-child(5) {
+    grid-area: consent;
+  }
+}
