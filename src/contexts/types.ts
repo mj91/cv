@@ -9,20 +9,33 @@ export type Data = {
     title: string
     entries: ExperienceEntry[]
   }
+  education: {
+    title: string
+    entries: EducationEntry[]
+  }
 }
 
-export type ExperienceDescription =
+export type TimelineEntryDescription =
   | string
   | {
       type: Parameters<typeof createElement>[0]
       props?: Parameters<typeof createElement>[1]
-      children?: ExperienceDescription | ExperienceDescription[]
+      children?: TimelineEntryDescription
     }
+  | TimelineEntryDescription[]
 
-export type ExperienceEntry = {
-  company: string
-  job?: string
+export type TimelineEntry = {
   start?: string | number
   end?: string | number
-  description?: ExperienceDescription | ExperienceDescription[]
+  description?: TimelineEntryDescription
+}
+
+export type ExperienceEntry = TimelineEntry & {
+  company: string
+  job?: string
+}
+
+export type EducationEntry = TimelineEntry & {
+  school: string
+  faculty?: string
 }

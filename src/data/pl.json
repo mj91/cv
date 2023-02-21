@@ -28,7 +28,7 @@
       },
       {
         "start": "2020",
-        "end": "obecnie",
+        "end": "2021",
         "company": "municypalne.pl",
         "job": "Fullstack Developer",
         "description": "Przygotowanie infrastruktury, realizacja i utrzymanie portalu o finansach jednostek samorządu terytorialnego."
@@ -87,6 +87,21 @@
         "company": "freelance",
         "job": "Web Developer",
         "description": "Samodzielna i zespołowa realizacja projektów stron internetowych opartych na autorskich rozwiązaniach."
+      }
+    ]
+  },
+  "education": {
+    "title": "Wykształcenie",
+    "entries": [
+      {
+        "start": "2010",
+        "end": "2016",
+        "school": "Politechnika Warszawska",
+        "faculty": "Wydział Elektroniki i Technik Informacyjnych",
+        "description": [
+          { "type": "div", "children": "Kierunek: Informatyka" },
+          { "type": "div", "children": "Uzyskany tytuł: inżynier" }
+        ]
       }
     ]
   }
