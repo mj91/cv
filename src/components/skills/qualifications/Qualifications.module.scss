@@ -1,0 +1,69 @@
+@use 'styles/colors.scss';
+
+.tech {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  align-items: center;
+
+  > span {
+    border-top: solid 1rem colors.$primary;
+    height: 0rem;
+    width: 100%;
+    position: relative;
+
+    &::after {
+      content: '';
+      border-top: solid 1rem colors.$secondary;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    &.expert::after {
+      width: 100%;
+    }
+
+    &.advanced::after {
+      width: 75%;
+    }
+
+    &.intermediate::after {
+      width: 50%;
+    }
+
+    &.beginner::after {
+      width: 25%;
+    }
+  }
+}
+
+.experience {
+  word-break: break-word;
+
+  > span {
+    white-space: nowrap;
+
+    @media screen {
+      &.detailed {
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+      }
+    }
+
+    &:not(:last-child)::after {
+      cursor: default;
+      content: '/';
+      margin: 0 0.5rem;
+      color: colors.$secondary;
+      text-decoration: none;
+      display: inline-block;
+    }
+  }
+}
+
+.languages {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}

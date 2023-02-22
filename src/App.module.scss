@@ -7,6 +7,7 @@
     'experience skills' min-content
     'education skills' auto
     'consent consent' min-content / 1fr 1fr;
+  grid-gap: 0 3rem;
 
   > :nth-child(1) {
     grid-area: header;

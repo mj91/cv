@@ -105,5 +105,100 @@
       }
     ]
   },
+  "skills": {
+    "title": "Kwalifikacje",
+    "tech": {
+      "title": "Technologie i narzędzia",
+      "entries": [
+        { "name": "React", "level": "expert" },
+        { "name": "HTML/CSS", "level": "advanced" },
+        { "name": "JavaScript", "level": "advanced" },
+        { "name": "TypeScript", "level": "advanced" },
+        { "name": "NodeJS", "level": "advanced" },
+        { "name": "GraphQL", "level": "intermediate" },
+        { "name": "AWS", "level": "intermediate" },
+        { "name": "Docker", "level": "intermediate" },
+        { "name": "SQL", "level": "intermediate" },
+        { "name": "NoSQL", "level": "intermediate" },
+        { "name": "Git", "level": "expert" },
+        { "name": "Linux", "level": "expert" },
+        { "name": "OSX", "level": "advanced" },
+        { "name": "Windows", "level": "intermediate" }
+      ]
+    },
+    "experience": {
+      "title": "Doświadczenie w pracy z",
+      "entries": [
+        {
+          "name": "AWS",
+          "details": "EC2, ACM, Route 53, RDS, Cognito, DynamoDB, Lambda, Serverless framework"
+        },
+        { "name": "GitHub", "details": "GitHub Actions, GitHub Packages" },
+        { "name": "Gitlab", "details": "Gitlab Pipelines" },
+        {
+          "name": "NPM",
+          "details": "Design and manage NPM packages for internal use"
+        },
+        { "name": "ESlint" },
+        { "name": "Webpack" },
+        { "name": "Prettier" },
+        { "name": "Material UI" },
+        { "name": "ExpressJS" },
+        { "name": "Yarn" },
+        { "name": "Redux" },
+        { "name": "Mobx" },
+        { "name": "Cypress" },
+        { "name": "Jest" },
+        { "name": "Playwright" },
+        { "name": "Sass" },
+        { "name": "Babel" },
+        { "name": "Styled Components" },
+        { "name": "CSS Modules" },
+        { "name": "VS Code" },
+        { "name": "WebStorm" },
+        { "name": "Axios" },
+        { "name": "Rollup" }
+      ]
+    },
+    "languages": {
+      "title": "Języki",
+      "entries": [
+        {
+          "name": "polski",
+          "level": "native"
+        },
+        {
+          "name": "angielski",
+          "level": "B2"
+        }
+      ]
+    },
+    "other": {
+      "title": "Inne",
+      "entries": ["Prawo jazdy kategorii B"]
+    },
+    "soft": {
+      "title": "Umiejętności miękkie",
+      "entries": [
+        "👌 Dbałość o szczegóły",
+        "💡 Kreatywność",
+        "🔍 Analityczny umysł",
+        "🎖️ Zaangażowanie",
+        "🤝 Praca zespołowa",
+        "📖 Chęć rozwoju",
+        "🧍‍♂️Samodzielność",
+        "😅 Poczucie humoru"
+      ]
+    },
+    "interests": {
+      "title": "Zainteresowania",
+      "entries": [
+        "🧭 Podróże",
+        "🎲 Gry planszowe",
+        "⛰️ Trekking górski",
+        "📷 Fotografia"
+      ]
+    }
+  },
   "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych w celu prowadzenia rekrutacji na aplikowane przeze mnie stanowisko."
 }

@@ -13,6 +13,43 @@ export type Data = {
     title: string
     entries: EducationEntry[]
   }
+  skills: {
+    title: string
+    tech: {
+      title: string
+      entries: {
+        name: string
+        level: 'expert' | 'advanced' | 'intermediate' | 'beginner'
+      }[]
+    }
+    experience: {
+      title: string
+      entries: {
+        name: string
+        details?: string
+      }[]
+    }
+    languages: {
+      title: string
+      entries: {
+        name: string
+        level: string
+      }[]
+    }
+    other: {
+      title: string
+      entries: string[]
+    }
+    soft: {
+      title: string
+      entries: string[]
+    }
+    interests: {
+      title: string
+      entries: string[]
+    }
+  }
+
   consent: string
 }
 
