@@ -32,6 +32,10 @@
   }
 
   .actions {
+    @media print {
+      display: none;
+    }
+
     user-select: none;
     display: flex;
     align-items: center;

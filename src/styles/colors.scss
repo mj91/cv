@@ -1,5 +1,14 @@
-$primary: #444;
-$secondary: #48f;
-$secondary-highlight: #5af;
-$background: white;
+@import './colors/dark.scss';
+@import './colors/light.scss';
+
+@media (prefers-color-scheme: dark) {
+  @import './colors/dark.scss';
+}
+
+$primary: var(--primary);
+$secondary: var(--secondary);
+$secondary-highlight: var(--secondary-highlight);
+$background: var(--background);
+$background-outer: var(--background-outer);
+
 $print: black;

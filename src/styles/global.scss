@@ -3,6 +3,10 @@
 
 @include typography.global;
 
+html {
+  background: colors.$background-outer;
+}
+
 body {
   box-sizing: border-box;
   padding: 5rem;

@@ -1,3 +1,5 @@
+@use 'styles/colors.scss' as colors;
+
 .language {
   position: relative;
 
@@ -9,6 +11,7 @@
     right: 1.5rem;
     width: 2rem;
     background: white;
+    color: black;
     border-radius: 25%;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 

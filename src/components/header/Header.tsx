@@ -1,6 +1,7 @@
 import { useLanguage } from 'contexts/language'
 import { useData } from '../../contexts/data'
 import { Language } from './actions/language/Language'
+import { Theme } from './actions/theme/Theme'
 import styles from './Header.module.scss'
 
 export const Header = () => {
@@ -27,6 +28,7 @@ export const Header = () => {
         📞 <a href={`tel:${data.phone.replaceAll(' ', '')}`}>{data.phone}</a>
       </div>
       <div className={styles.actions}>
+        <Theme />
         <Language />
       </div>
     </div>
