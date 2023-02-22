@@ -1,12 +1,17 @@
 @use 'styles/colors.scss' as colors;
+@use 'styles/typography.scss' as typography;
 
 .header {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: max-content auto min-content;
-  grid-template-rows: 3fr repeat(3, 1fr);
+  grid-template-rows: 2fr repeat(3, 1fr);
   gap: 1rem 2rem;
   margin-bottom: 3rem;
+
+  > div {
+    @include typography.typography(18, 400);
+  }
 
   img.photo {
     border: solid 0.75rem colors.$primary;
@@ -24,14 +29,5 @@
     img {
       width: 100%;
     }
-  }
-
-  h1 {
-    font-size: 4rem;
-    margin: auto 0;
-  }
-
-  div {
-    font-size: 1.6rem;
   }
 }

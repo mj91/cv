@@ -1,0 +1,63 @@
+@use 'styles/colors.scss' as colors;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;&display=swap');
+
+@mixin size($font-size) {
+  font-size: #{$font-size/10}rem;
+}
+
+@mixin typography($font-size, $font-weight) {
+  @include size($font-size);
+  font-weight: $font-weight;
+}
+
+@mixin global {
+  html {
+    font-size: 1vw;
+
+    @media screen and (min-width: 1080px) {
+      font-size: 10px;
+    }
+
+    @media print {
+      font-size: 2.1mm;
+    }
+  }
+
+  body {
+    @include typography(14, 400);
+    color: colors.$primary;
+
+    @media print {
+      color: colors.$print;
+    }
+  }
+
+  h1 {
+    @include typography(40, 700);
+    margin: 1rem 0;
+  }
+
+  h2 {
+    @include typography(20, 700);
+    text-transform: uppercase;
+    margin: 1rem 0;
+  }
+
+  strong {
+    font-weight: 500;
+  }
+
+  a {
+    text-decoration: none;
+    color: colors.$secondary;
+
+    &:hover {
+      color: colors.$secondary-highlight;
+      text-decoration: underline;
+    }
+
+    @media print {
+      color: colors.$print;
+    }
+  }
+}

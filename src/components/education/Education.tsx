@@ -7,7 +7,7 @@ export const Education = () => {
   const { education } = useData()
   return (
     <div className={styles.education}>
-      <h3>{education.title}</h3>
+      <h2>{education.title}</h2>
       <Timeline>
         {education.entries.map((entry, index) => (
           <TimelineItem key={index} start={entry.start} end={entry.end}>

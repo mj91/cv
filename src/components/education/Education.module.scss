@@ -1,24 +1,20 @@
-.education {
-  h3 {
-    font-size: 2rem;
-    text-transform: uppercase;
-  }
+@use 'styles/typography.scss' as typography;
 
+.education {
   .entry {
     position: relative;
     top: -0.2rem;
 
     > strong {
-      font-size: 1.8rem;
+      @include typography.size(18);
     }
 
     > i {
-      font-size: 1.6rem;
-      font-weight: 300;
+      @include typography.typography(14, 300);
     }
 
     > div {
-      font-size: 1.4rem;
+      @include typography.size(14);
       margin: 0.3rem 0;
     }
   }

@@ -8,7 +8,7 @@ export const Experience = () => {
 
   return (
     <div className={styles.experience}>
-      <h3>{experience.title}</h3>
+      <h2>{experience.title}</h2>
       <Timeline>
         {experience.entries.map((entry, index) => (
           <TimelineItem key={index} start={entry.start} end={entry.end}>
