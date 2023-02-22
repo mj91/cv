@@ -1,0 +1,213 @@
+{
+  "name": "Marcin Jędrzejewski",
+  "birthdate": "1991-01-30T13:00:00.000Z",
+  "email": "jedrzejewski.marcin@gmail.com",
+  "phone": "+48 794 792 954",
+  "experience": {
+    "title": "Work experience",
+    "entries": [
+      {
+        "start": "2020",
+        "end": "2022",
+        "company": "Packhelp",
+        "job": "Senior Software Engineer",
+        "description": [
+          {
+            "type": "div",
+            "children": "Rozwój platformy backofficowej realizującej zadania z zakresu SCM i CRM."
+          },
+          {
+            "type": "div",
+            "children": "Rozwój aplikacji do projektowania wykrojników opakowań."
+          },
+          {
+            "type": "div",
+            "children": "Rozwój aplikacji wewnętrznych organizacji."
+          }
+        ]
+      },
+      {
+        "start": "2020",
+        "end": "2021",
+        "company": "municypalne.pl",
+        "job": "Fullstack Developer",
+        "description": "Przygotowanie infrastruktury, realizacja i utrzymanie portalu o finansach jednostek samorządu terytorialnego."
+      },
+      {
+        "start": "2019",
+        "end": "2020",
+        "company": "Pragmatic Coders",
+        "job": "Frontend/Fullstack Developer",
+        "description": ""
+      },
+      {
+        "start": "2016",
+        "end": "2019",
+        "company": "Sportradar",
+        "job": "Frontend Developer",
+        "description": "Rozwój aplikacji dostarczających statystyki sportowe."
+      },
+      {
+        "start": "2015",
+        "end": "2015",
+        "company": "Moongorilla",
+        "job": "Adobe CEP Developer",
+        "description": "Realizacja pluginu dla grafików do programu Adobe Photoshop."
+      },
+      {
+        "start": "2014",
+        "end": "2014",
+        "company": "IVES-System",
+        "job": "Web Developer",
+        "description": [
+          {
+            "type": "div",
+            "children": "Realizacja interfejsów administracyjnych w rządowej platformie \"Projekt P1\" we współpracy z Unizeto Technologies."
+          },
+          {
+            "type": "div",
+            "children": "Rozwój i utrzymanie serwisu eDoktor24.pl."
+          },
+          {
+            "type": "div",
+            "children": "Rozwój aplikacji wewnętrznych organizacji."
+          }
+        ]
+      },
+      {
+        "start": "2012",
+        "end": "2014",
+        "company": "MyWorks",
+        "job": "Web Developer",
+        "description": "Samodzielna i zespołowa realizacja projektów stron internetowych opartych na systemie WordPress."
+      },
+      {
+        "start": "2012",
+        "end": "2014",
+        "company": "freelance",
+        "job": "Web Developer",
+        "description": "Samodzielna i zespołowa realizacja projektów stron internetowych opartych na autorskich rozwiązaniach."
+      }
+    ]
+  },
+  "education": {
+    "title": "Wykształcenie",
+    "entries": [
+      {
+        "start": "2010",
+        "end": "2016",
+        "school": "Politechnika Warszawska",
+        "faculty": "Wydział Elektroniki i Technik Informacyjnych",
+        "description": [
+          { "type": "div", "children": "Kierunek: Informatyka" },
+          { "type": "div", "children": "Uzyskany tytuł: inżynier" }
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Kwalifikacje",
+    "tech": {
+      "title": "Technologie i narzędzia",
+      "entries": [
+        { "name": "React", "level": "expert" },
+        { "name": "Next.js", "level": "beginner" },
+        { "name": "HTML/CSS", "level": "advanced" },
+        { "name": "JavaScript", "level": "advanced" },
+        { "name": "TypeScript", "level": "advanced" },
+        { "name": "NodeJS", "level": "intermediate" },
+        { "name": "GraphQL", "level": "intermediate" },
+        { "name": "PHP", "level": "beginner" },
+        { "name": "Ruby on Rails", "level": "beginner" },
+        { "name": "AWS", "level": "intermediate" },
+        { "name": "Docker", "level": "intermediate" },
+        { "name": "Kubernetes", "level": "beginner" },
+        { "name": "SQL", "level": "intermediate" },
+        { "name": "NoSQL", "level": "intermediate" },
+        { "name": "Git", "level": "expert" },
+        { "name": "Linux", "level": "advanced" },
+        { "name": "OSX", "level": "advanced" },
+        { "name": "Windows", "level": "intermediate" }
+      ]
+    },
+    "experience": {
+      "title": "Doświadczenie w pracy z",
+      "entries": [
+        {
+          "name": "AWS",
+          "details": "EC2, ACM, Route 53, RDS, Cognito, DynamoDB, Lambda, SNS, Serverless framework"
+        },
+        { "name": "GitHub", "details": "GitHub Actions, GitHub Packages" },
+        { "name": "Gitlab", "details": "Gitlab Pipelines" },
+        {
+          "name": "NPM",
+          "details": "Tworzyłem i zarządzałem kompilowalnymi paczkami NPM na wewnętrzne potrzeby organizacji"
+        },
+        { "name": "ESlint" },
+        { "name": "Webpack" },
+        { "name": "Prettier" },
+        { "name": "Material UI" },
+        { "name": "ExpressJS" },
+        { "name": "Yarn" },
+        { "name": "Redux" },
+        { "name": "Mobx" },
+        { "name": "Cypress" },
+        { "name": "Jest" },
+        { "name": "Playwright" },
+        { "name": "Sass" },
+        { "name": "Babel" },
+        { "name": "Styled Components" },
+        { "name": "CSS Modules" },
+        { "name": "VS Code" },
+        { "name": "WebStorm" },
+        { "name": "Axios" },
+        { "name": "Scrum" },
+        { "name": "Kanban" },
+        { "name": "Styleguidist" },
+        { "name": "Storybook" },
+        { "name": "Monorepo" },
+        { "name": "Rollup" }
+      ]
+    },
+    "languages": {
+      "title": "Języki",
+      "entries": [
+        {
+          "name": "polski",
+          "level": "native"
+        },
+        {
+          "name": "angielski",
+          "level": "B2"
+        }
+      ]
+    },
+    "other": {
+      "title": "Inne",
+      "entries": ["Prawo jazdy kategorii B"]
+    },
+    "soft": {
+      "title": "Umiejętności miękkie",
+      "entries": [
+        "👌 Dbałość o szczegóły",
+        "💡 Kreatywność",
+        "🔍 Analityczny umysł",
+        "🎖️ Zaangażowanie",
+        "🤝 Praca zespołowa",
+        "📖 Chęć rozwoju",
+        "🧍‍♂️Samodzielność",
+        "😅 Poczucie humoru"
+      ]
+    },
+    "interests": {
+      "title": "Zainteresowania",
+      "entries": [
+        "🧭 Podróże",
+        "🎲 Gry planszowe",
+        "⛰️ Trekking górski",
+        "📷 Fotografia"
+      ]
+    }
+  },
+  "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych w celu prowadzenia rekrutacji na aplikowane przeze mnie stanowisko."
+}

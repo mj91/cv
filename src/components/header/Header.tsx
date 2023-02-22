@@ -1,8 +1,11 @@
+import { useLanguage } from 'contexts/language'
 import { useData } from '../../contexts/data'
+import { Language } from './actions/Language'
 import styles from './Header.module.scss'
 
 export const Header = () => {
   const data = useData()
+  const language = useLanguage()
 
   return (
     <div className={styles.header}>
@@ -10,15 +13,21 @@ export const Header = () => {
       <h1>{data.name}</h1>
       <div>
         ⭐{' '}
-        {new Date(data.birthdate).toLocaleDateString(navigator.language, {
-          dateStyle: 'long',
-        })}
+        {new Date(data.birthdate).toLocaleDateString(
+          language || navigator.language,
+          {
+            dateStyle: 'long',
+          }
+        )}
       </div>
       <div>
         📧 <a href={`mailto:${data.email}`}>{data.email}</a>
       </div>
       <div>
         📞 <a href={`tel:${data.phone.replaceAll(' ', '')}`}>{data.phone}</a>
+      </div>
+      <div className={styles.actions}>
+        <Language />
       </div>
     </div>
   )

@@ -1,0 +1,41 @@
+.language {
+  position: relative;
+
+  span {
+    font-size: 1rem;
+    font-weight: 700;
+    position: absolute;
+    bottom: 0;
+    right: 1.5rem;
+    width: 2rem;
+    background: white;
+    border-radius: 25%;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+
+    &:nth-child(1) {
+      opacity: 1;
+      transform: rotate3d(0, 1, 0, 00deg);
+      transition: transform 300ms 300ms, opacity 0ms 300ms;
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+      transform: rotate3d(0, 1, 0, 90deg);
+      transition: transform 300ms 0ms, opacity 0ms 300ms;
+    }
+  }
+
+  &:hover span {
+    &:nth-child(1) {
+      opacity: 0;
+      transform: rotate3d(0, 1, 0, 90deg);
+      transition: transform 300ms 0ms, opacity 0ms 300ms;
+    }
+
+    &:nth-child(2) {
+      opacity: 1;
+      transform: rotate3d(0, 1, 0, 0deg);
+      transition: transform 300ms 300ms, opacity 0ms 300ms;
+    }
+  }
+}

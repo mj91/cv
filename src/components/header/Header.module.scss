@@ -30,4 +30,16 @@
       width: 100%;
     }
   }
+
+  .actions {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    > * {
+      text-align: center;
+      cursor: pointer;
+      font-size: 3rem;
+      width: 5rem;
+    }
+  }
 }

@@ -1,16 +1,73 @@
-import { createContext, FC, PropsWithChildren, useContext } from 'react'
-import pl from '../data/pl.json'
+import {
+  createContext,
+  FC,
+  PropsWithChildren,
+  Suspense,
+  useContext,
+  useEffect,
+  useState,
+} from 'react'
+import { useLanguage } from './language'
 import { Data } from './types'
 
-const DataContext = createContext<Data>(pl as Data)
+const noData: Data = {
+  name: '',
+  birthdate: '',
+  email: '',
+  phone: '',
+  experience: {
+    title: '',
+    entries: [],
+  },
+  education: {
+    title: '',
+    entries: [],
+  },
+  skills: {
+    title: '',
+    tech: {
+      title: '',
+      entries: [],
+    },
+    experience: {
+      title: '',
+      entries: [],
+    },
+    languages: {
+      title: '',
+      entries: [],
+    },
+    other: {
+      title: '',
+      entries: [],
+    },
+    soft: {
+      title: '',
+      entries: [],
+    },
+    interests: {
+      title: '',
+      entries: [],
+    },
+  },
+  consent: '',
+}
+
+const DataContext = createContext<Data>(noData)
 
 export const useData = () => useContext(DataContext)
 
-export const DataProvider: FC<PropsWithChildren<{ language?: 'pl' }>> = ({
-  children,
-  language = 'pl',
-}) => {
+export const DataProvider: FC<PropsWithChildren> = ({ children }) => {
+  const language = useLanguage()
+  const [data, setData] = useState<Data>(noData)
+
+  useEffect(() => {
+    import(`data/${language}.json`).then((data) => {
+      setData(data)
+    })
+  }, [language])
+
   return (
-    <DataContext.Provider value={pl as Data}>{children}</DataContext.Provider>
+    <DataContext.Provider value={data as Data}>{children}</DataContext.Provider>
   )
 }
