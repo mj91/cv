@@ -2,7 +2,6 @@ import {
   createContext,
   FC,
   PropsWithChildren,
-  Suspense,
   useContext,
   useEffect,
   useState,

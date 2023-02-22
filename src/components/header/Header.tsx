@@ -1,6 +1,6 @@
 import { useLanguage } from 'contexts/language'
 import { useData } from '../../contexts/data'
-import { Language } from './actions/Language'
+import { Language } from './actions/language/Language'
 import styles from './Header.module.scss'
 
 export const Header = () => {

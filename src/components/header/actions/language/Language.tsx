@@ -1,5 +1,5 @@
 import { useLanguage } from 'contexts/language'
-import { useCallback, useMemo } from 'react'
+import { useCallback } from 'react'
 import styles from './Language.module.scss'
 
 const LANGUAGES = ['PL', 'EN']
