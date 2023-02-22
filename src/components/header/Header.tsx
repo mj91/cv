@@ -28,6 +28,9 @@ export const Header = () => {
         📞 <a href={`tel:${data.phone.replaceAll(' ', '')}`}>{data.phone}</a>
       </div>
       <div className={styles.actions}>
+        <a className={styles.print} href="javascript:window.print()">
+          🖨️
+        </a>
         <Theme />
         <Language />
       </div>
