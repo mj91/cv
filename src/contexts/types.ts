@@ -13,6 +13,7 @@ export type Data = {
     title: string
     entries: EducationEntry[]
   }
+  consent: string
 }
 
 export type TimelineEntryDescription =
