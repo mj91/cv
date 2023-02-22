@@ -111,17 +111,21 @@
       "title": "Technologie i narzędzia",
       "entries": [
         { "name": "React", "level": "expert" },
+        { "name": "Next.js", "level": "beginner" },
         { "name": "HTML/CSS", "level": "advanced" },
         { "name": "JavaScript", "level": "advanced" },
         { "name": "TypeScript", "level": "advanced" },
-        { "name": "NodeJS", "level": "advanced" },
+        { "name": "NodeJS", "level": "intermediate" },
         { "name": "GraphQL", "level": "intermediate" },
+        { "name": "PHP", "level": "beginner" },
+        { "name": "Ruby on Rails", "level": "beginner" },
         { "name": "AWS", "level": "intermediate" },
         { "name": "Docker", "level": "intermediate" },
+        { "name": "Kubernetes", "level": "beginner" },
         { "name": "SQL", "level": "intermediate" },
         { "name": "NoSQL", "level": "intermediate" },
         { "name": "Git", "level": "expert" },
-        { "name": "Linux", "level": "expert" },
+        { "name": "Linux", "level": "advanced" },
         { "name": "OSX", "level": "advanced" },
         { "name": "Windows", "level": "intermediate" }
       ]
@@ -131,13 +135,13 @@
       "entries": [
         {
           "name": "AWS",
-          "details": "EC2, ACM, Route 53, RDS, Cognito, DynamoDB, Lambda, Serverless framework"
+          "details": "EC2, ACM, Route 53, RDS, Cognito, DynamoDB, Lambda, SNS, Serverless framework"
         },
         { "name": "GitHub", "details": "GitHub Actions, GitHub Packages" },
         { "name": "Gitlab", "details": "Gitlab Pipelines" },
         {
           "name": "NPM",
-          "details": "Design and manage NPM packages for internal use"
+          "details": "Tworzyłem i zarządzałem kompilowalnymi paczkami NPM na wewnętrzne potrzeby organizacji"
         },
         { "name": "ESlint" },
         { "name": "Webpack" },
@@ -157,6 +161,11 @@
         { "name": "VS Code" },
         { "name": "WebStorm" },
         { "name": "Axios" },
+        { "name": "Scrum" },
+        { "name": "Kanban" },
+        { "name": "Styleguidist" },
+        { "name": "Storybook" },
+        { "name": "Monorepo" },
         { "name": "Rollup" }
       ]
     },
