@@ -17,9 +17,10 @@ export type Data = {
     title: string
     tech: {
       title: string
+      description: Description
       entries: {
         name: string
-        level: 'expert' | 'advanced' | 'intermediate' | 'beginner'
+        level: 1 | 2 | 3 | 4 | 5
       }[]
     }
     experience: {

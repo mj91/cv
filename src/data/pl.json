@@ -106,28 +106,39 @@
     ]
   },
   "skills": {
-    "title": "Kwalifikacje",
+    "title": "Kompetencje",
     "tech": {
       "title": "Technologie i narzędzia",
+      "description": [
+        "ℹ️ Kompetencje zostały zaprezentowane w 5-stopniowej skali ",
+        {
+          "type": "a",
+          "props": {
+            "href": "https://hr.nih.gov/working-nih/competencies/competencies-proficiency-scale"
+          },
+          "children": "NIH Competencies Proficiency Scale"
+        },
+        "."
+      ],
       "entries": [
-        { "name": "React", "level": "expert" },
-        { "name": "Next.js", "level": "beginner" },
-        { "name": "HTML/CSS", "level": "advanced" },
-        { "name": "JavaScript", "level": "advanced" },
-        { "name": "TypeScript", "level": "advanced" },
-        { "name": "NodeJS", "level": "intermediate" },
-        { "name": "GraphQL", "level": "intermediate" },
-        { "name": "PHP", "level": "beginner" },
-        { "name": "Ruby on Rails", "level": "beginner" },
-        { "name": "AWS", "level": "intermediate" },
-        { "name": "Docker", "level": "intermediate" },
-        { "name": "Kubernetes", "level": "beginner" },
-        { "name": "SQL", "level": "intermediate" },
-        { "name": "NoSQL", "level": "intermediate" },
-        { "name": "Git", "level": "expert" },
-        { "name": "Linux", "level": "advanced" },
-        { "name": "OSX", "level": "advanced" },
-        { "name": "Windows", "level": "intermediate" }
+        { "name": "React", "level": 5 },
+        { "name": "Next.js", "level": 2 },
+        { "name": "HTML/CSS", "level": 4 },
+        { "name": "JavaScript", "level": 4 },
+        { "name": "TypeScript", "level": 4 },
+        { "name": "NodeJS", "level": 3 },
+        { "name": "GraphQL", "level": 3 },
+        { "name": "PHP", "level": 2 },
+        { "name": "Ruby on Rails", "level": 2 },
+        { "name": "AWS", "level": 3 },
+        { "name": "Docker", "level": 3 },
+        { "name": "Kubernetes", "level": 1 },
+        { "name": "SQL", "level": 3 },
+        { "name": "NoSQL", "level": 3 },
+        { "name": "Windows" },
+        { "name": "Linux" },
+        { "name": "OSX" },
+        { "name": "Git", "level": 5 }
       ]
     },
     "experience": {

@@ -26,6 +26,7 @@ const noData: Data = {
     title: '',
     tech: {
       title: '',
+      description: '',
       entries: [],
     },
     experience: {

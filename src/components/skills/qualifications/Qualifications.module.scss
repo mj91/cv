@@ -2,15 +2,20 @@
 
 .tech {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 5fr repeat(5, 2fr);
+  grid-column-gap: 2px;
   grid-template-rows: auto;
   align-items: center;
 
   > span {
     border-top: solid 1rem colors.$background-outer;
-    height: 0rem;
+    height: 0;
     width: 100%;
     position: relative;
+
+    &.fill {
+      border-color: colors.$secondary;
+    }
 
     &::after {
       content: '';
@@ -25,17 +30,26 @@
     }
 
     &.advanced::after {
-      width: 75%;
+      width: 80%;
     }
 
     &.intermediate::after {
-      width: 50%;
+      width: 60%;
     }
 
-    &.beginner::after {
-      width: 25%;
+    &.novice::after {
+      width: 40%;
+    }
+
+    &.fa::after {
+      width: 20%;
     }
   }
+}
+
+.tech ~ i {
+  display: block;
+  margin-top: 1rem;
 }
 
 .experience {

@@ -2,6 +2,7 @@ import { useData } from 'contexts/data'
 import styles from './Qualifications.module.scss'
 import sortBy from 'lodash/sortBy'
 import { Fragment } from 'react'
+import { Description } from 'components/common/descrition/Description'
 
 export const Qualifications = () => {
   const {
@@ -15,10 +16,22 @@ export const Qualifications = () => {
         {tech.entries.map(({ name, level }) => (
           <Fragment key={name}>
             {name}
-            <span className={styles[level]}></span>
+            {Array(level)
+              .fill(null)
+              .map((empty, index) => (
+                <span key={index} className={styles.fill}></span>
+              ))}
+            {Array(5 - level)
+              .fill(null)
+              .map((empty, index) => (
+                <span key={index} className={styles.empty}></span>
+              ))}
           </Fragment>
         ))}
       </div>
+      <i>
+        <Description description={tech.description} />
+      </i>
       <h3>{experience.title}</h3>
       <div className={styles.experience}>
         {sortBy(experience.entries, 'name').map(({ name, details }) => (
