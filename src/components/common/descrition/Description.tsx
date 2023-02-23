@@ -1,4 +1,4 @@
-import { createElement } from 'react'
+import { createElement, Fragment } from 'react'
 import { Description as DescriptionType } from '../../../contexts/data'
 
 const createDescriptionElement = (
@@ -7,10 +7,15 @@ const createDescriptionElement = (
 ): JSX.Element | null => {
   if (!description) return null
 
-  if (typeof description === 'string') return <>{description}</>
+  if (typeof description === 'string')
+    return <Fragment key={index}>{description}</Fragment>
 
   if (Array.isArray(description))
-    return <>{description.map(createDescriptionElement)}</>
+    return (
+      <Fragment key={index}>
+        {description.map(createDescriptionElement)}
+      </Fragment>
+    )
 
   if (description.type)
     return createElement(
