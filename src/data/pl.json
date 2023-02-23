@@ -10,7 +10,19 @@
         "start": "2020",
         "end": "2022",
         "company": "Packhelp",
+        "url": "https://packhelp.com",
         "job": "Senior Software Engineer",
+        "stack": [
+          "React",
+          "TypeScript",
+          "MobX",
+          "Styleguidist",
+          "GitHub Packages",
+          "GitHub Actions",
+          "Ruby on Rails",
+          "Docker",
+          "OSX"
+        ],
         "description": [
           {
             "type": "div",
@@ -30,35 +42,69 @@
         "start": "2020",
         "end": "2021",
         "company": "municypalne.pl",
+        "url": "https://municypalne.pl",
         "job": "Fullstack Developer",
-        "description": "Przygotowanie infrastruktury, realizacja i utrzymanie portalu o finansach jednostek samorządu terytorialnego."
+        "stack": [
+          "React",
+          "JavaScript",
+          "NodeJS",
+          "AWS",
+          "GraphQL",
+          "MongoDB",
+          "Docker",
+          "Linux",
+          "PHP",
+          "Wordpress"
+        ],
+        "description": "Przygotowanie infrastruktury i architektury, realizacja i utrzymanie portalu o finansach jednostek samorządu terytorialnego, wraz z zaawansowanym systemem przeszukiwania danych."
       },
       {
         "start": "2019",
         "end": "2020",
         "company": "Pragmatic Coders",
+        "url": "https://pragmaticcoders.com",
         "job": "Frontend/Fullstack Developer",
-        "description": ""
+        "stack": ["React", "TypeScript", "AWS", "NodeJS", "Gitlab"],
+        "description": [
+          {
+            "type": "div",
+            "children": "Rozwój aplikacji backofficowej dla zaawansowanej platformy z zakresu nowoczesnej bankowości, integrującej obrót krypotwalutami z płatnościami kartami płatniczymi."
+          },
+          {
+            "type": "div",
+            "children": "Rozwój platformy giełdowej dla obrotu kontraktami terminowymi na ropę naftową."
+          },
+          {
+            "type": "div",
+            "children": "Rozwój platformy do zarządzania danymi osobowymi."
+          }
+        ]
       },
       {
         "start": "2016",
         "end": "2019",
         "company": "Sportradar",
+        "url": "https://sportradar.com",
         "job": "Frontend Developer",
+        "stack": ["React", "TypeScript", "Gitlab"],
         "description": "Rozwój aplikacji dostarczających statystyki sportowe."
       },
       {
         "start": "2015",
         "end": "2015",
         "company": "Moongorilla",
+        "url": "https://moongorilla.com/",
         "job": "Adobe CEP Developer",
-        "description": "Realizacja pluginu dla grafików do programu Adobe Photoshop."
+        "stack": ["JavaScript", "NodeJS"],
+        "description": "Realizacja plugin-u dla grafików do programu Adobe Photoshop."
       },
       {
         "start": "2014",
         "end": "2014",
         "company": "IVES-System",
+        "url": "https://ives-system.com/",
         "job": "Web Developer",
+        "stack": ["JavaScript", "jQuery", "PHP", "Java"],
         "description": [
           {
             "type": "div",
@@ -67,10 +113,6 @@
           {
             "type": "div",
             "children": "Rozwój i utrzymanie serwisu eDoktor24.pl."
-          },
-          {
-            "type": "div",
-            "children": "Rozwój aplikacji wewnętrznych organizacji."
           }
         ]
       },
@@ -78,6 +120,8 @@
         "start": "2012",
         "end": "2014",
         "company": "MyWorks",
+        "stack": ["Wordpress", "JavaScript", "PHP"],
+        "url": "https://myworks.pl/",
         "job": "Web Developer",
         "description": "Samodzielna i zespołowa realizacja projektów stron internetowych opartych na systemie WordPress."
       },
@@ -110,10 +154,11 @@
     "tech": {
       "title": "Technologie i narzędzia",
       "description": [
-        "ℹ️ Kompetencje zostały zaprezentowane w 5-stopniowej skali ",
+        "Kompetencje zostały zaprezentowane w 5-stopniowej skali ",
         {
           "type": "a",
           "props": {
+            "target": "blank",
             "href": "https://hr.nih.gov/working-nih/competencies/competencies-proficiency-scale"
           },
           "children": "NIH Competencies Proficiency Scale"
@@ -135,9 +180,6 @@
         { "name": "Kubernetes", "level": 1 },
         { "name": "SQL", "level": 3 },
         { "name": "NoSQL", "level": 3 },
-        { "name": "Windows" },
-        { "name": "Linux" },
-        { "name": "OSX" },
         { "name": "Git", "level": 5 }
       ]
     },
@@ -148,8 +190,11 @@
           "name": "AWS",
           "details": "EC2, ACM, Route 53, RDS, Cognito, DynamoDB, Lambda, SNS, Serverless framework"
         },
-        { "name": "GitHub", "details": "GitHub Actions, GitHub Packages" },
-        { "name": "Gitlab", "details": "Gitlab Pipelines" },
+        {
+          "name": "GitHub",
+          "details": "w tym GitHub Actions, GitHub Packages"
+        },
+        { "name": "Gitlab", "details": "w tym Gitlab Pipelines" },
         {
           "name": "NPM",
           "details": "Tworzyłem i zarządzałem kompilowalnymi paczkami NPM na wewnętrzne potrzeby organizacji"
@@ -177,6 +222,10 @@
         { "name": "Styleguidist" },
         { "name": "Storybook" },
         { "name": "Monorepo" },
+        { "name": "Windows" },
+        { "name": "Linux" },
+        { "name": "OSX" },
+        { "name": "Wordpress" },
         { "name": "Rollup" }
       ]
     },
@@ -185,7 +234,7 @@
       "entries": [
         {
           "name": "polski",
-          "level": "native"
+          "level": "ojczysty"
         },
         {
           "name": "angielski",
@@ -206,7 +255,7 @@
         "🎖️ Zaangażowanie",
         "🤝 Praca zespołowa",
         "📖 Chęć rozwoju",
-        "🧍‍♂️Samodzielność",
+        "🧍‍♂️ Samodzielność",
         "😅 Poczucie humoru"
       ]
     },

@@ -72,6 +72,8 @@ export type TimelineEntry = {
 export type ExperienceEntry = TimelineEntry & {
   company: string
   job?: string
+  url?: string
+  stack?: string[]
 }
 
 export type EducationEntry = TimelineEntry & {

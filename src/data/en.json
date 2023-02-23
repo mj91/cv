@@ -10,19 +10,31 @@
         "start": "2020",
         "end": "2022",
         "company": "Packhelp",
+        "url": "https://packhelp.com",
         "job": "Senior Software Engineer",
+        "stack": [
+          "React",
+          "TypeScript",
+          "MobX",
+          "Styleguidist",
+          "GitHub Packages",
+          "GitHub Actions",
+          "Ruby on Rails",
+          "Docker",
+          "OSX"
+        ],
         "description": [
           {
             "type": "div",
-            "children": "Rozwój platformy backofficowej realizującej zadania z zakresu SCM i CRM."
+            "children": "Development of back office platform acting as internal SCM and CRM systems."
           },
           {
             "type": "div",
-            "children": "Rozwój aplikacji do projektowania wykrojników opakowań."
+            "children": "Development of web application for designing dielines and die cuts."
           },
           {
             "type": "div",
-            "children": "Rozwój aplikacji wewnętrznych organizacji."
+            "children": "Development of company's internal tools."
           }
         ]
       },
@@ -30,47 +42,77 @@
         "start": "2020",
         "end": "2021",
         "company": "municypalne.pl",
+        "url": "https://municypalne.pl",
         "job": "Fullstack Developer",
-        "description": "Przygotowanie infrastruktury, realizacja i utrzymanie portalu o finansach jednostek samorządu terytorialnego."
+        "stack": [
+          "React",
+          "JavaScript",
+          "NodeJS",
+          "AWS",
+          "GraphQL",
+          "MongoDB",
+          "Docker",
+          "Linux",
+          "PHP",
+          "Wordpress"
+        ],
+        "description": "Design of infrastructure and architecture, development and maintenance of a web portal dedicated to financial information of local government units, including advanced data search engine."
       },
       {
         "start": "2019",
         "end": "2020",
         "company": "Pragmatic Coders",
+        "url": "https://pragmaticcoders.com",
         "job": "Frontend/Fullstack Developer",
-        "description": ""
+        "stack": ["React", "TypeScript", "AWS", "NodeJS", "Gitlab"],
+        "description": [
+          {
+            "type": "div",
+            "children": "Development of back office for advanced platform in area of modern banking solutions, integrating cryptocurrency and card payments."
+          },
+          {
+            "type": "div",
+            "children": "Development of trading platform for OTC Oil Block Future Markets."
+          },
+          {
+            "type": "div",
+            "children": "Development of cloud-based data privacy platform."
+          }
+        ]
       },
       {
         "start": "2016",
         "end": "2019",
         "company": "Sportradar",
+        "url": "https://sportradar.com",
         "job": "Frontend Developer",
-        "description": "Rozwój aplikacji dostarczających statystyki sportowe."
+        "stack": ["React", "TypeScript", "Gitlab"],
+        "description": "Development of applications delivering sports statistics data."
       },
       {
         "start": "2015",
         "end": "2015",
         "company": "Moongorilla",
+        "url": "https://moongorilla.com/",
         "job": "Adobe CEP Developer",
-        "description": "Realizacja pluginu dla grafików do programu Adobe Photoshop."
+        "stack": ["JavaScript", "NodeJS"],
+        "description": "Development of Adobe Photoshop plug-in dedicated for graphics designers."
       },
       {
         "start": "2014",
         "end": "2014",
         "company": "IVES-System",
+        "url": "https://ives-system.com/",
         "job": "Web Developer",
+        "stack": ["JavaScript", "jQuery", "PHP", "Java", "SQL"],
         "description": [
           {
             "type": "div",
-            "children": "Realizacja interfejsów administracyjnych w rządowej platformie \"Projekt P1\" we współpracy z Unizeto Technologies."
+            "children": "Development of administrative web interfaces in the government platform \"Projekt P1\" (as a subcontractor of Unizeto Technologies)."
           },
           {
             "type": "div",
-            "children": "Rozwój i utrzymanie serwisu eDoktor24.pl."
-          },
-          {
-            "type": "div",
-            "children": "Rozwój aplikacji wewnętrznych organizacji."
+            "children": "Development and maintenance of eDoktor24.pl platform."
           }
         ]
       },
@@ -78,42 +120,48 @@
         "start": "2012",
         "end": "2014",
         "company": "MyWorks",
+        "stack": ["Wordpress", "JavaScript", "PHP"],
+        "url": "https://myworks.pl/",
         "job": "Web Developer",
-        "description": "Samodzielna i zespołowa realizacja projektów stron internetowych opartych na systemie WordPress."
+        "description": "Team and individual development of WordPress based websites."
       },
       {
         "start": "2012",
         "end": "2014",
         "company": "freelance",
         "job": "Web Developer",
-        "description": "Samodzielna i zespołowa realizacja projektów stron internetowych opartych na autorskich rozwiązaniach."
+        "description": "Team and individual development of websites based on custom solutions."
       }
     ]
   },
   "education": {
-    "title": "Wykształcenie",
+    "title": "Education",
     "entries": [
       {
         "start": "2010",
         "end": "2016",
-        "school": "Politechnika Warszawska",
-        "faculty": "Wydział Elektroniki i Technik Informacyjnych",
+        "school": "Warsaw University of Technology",
+        "faculty": "Faculty of Electronics and Information Technology",
         "description": [
-          { "type": "div", "children": "Kierunek: Informatyka" },
-          { "type": "div", "children": "Uzyskany tytuł: inżynier" }
+          { "type": "div", "children": "Field of study: Computer Science" },
+          {
+            "type": "div",
+            "children": "Degree: Bachelor of Science in Engineering"
+          }
         ]
       }
     ]
   },
   "skills": {
-    "title": "Kompetencje",
+    "title": "Competencies",
     "tech": {
-      "title": "Technologie i narzędzia",
+      "title": "Technologies and tools",
       "description": [
-        "ℹ️ Kompetencje zostały zaprezentowane w 5-stopniowej skali ",
+        "Competencies are presented on ",
         {
           "type": "a",
           "props": {
+            "target": "blank",
             "href": "https://hr.nih.gov/working-nih/competencies/competencies-proficiency-scale"
           },
           "children": "NIH Competencies Proficiency Scale"
@@ -139,17 +187,20 @@
       ]
     },
     "experience": {
-      "title": "Doświadczenie w pracy z",
+      "title": "Experience in work with",
       "entries": [
         {
           "name": "AWS",
           "details": "EC2, ACM, Route 53, RDS, Cognito, DynamoDB, Lambda, SNS, Serverless framework"
         },
-        { "name": "GitHub", "details": "GitHub Actions, GitHub Packages" },
-        { "name": "Gitlab", "details": "Gitlab Pipelines" },
+        {
+          "name": "GitHub",
+          "details": "incl. GitHub Actions, GitHub Packages"
+        },
+        { "name": "Gitlab", "details": "incl. Gitlab Pipelines" },
         {
           "name": "NPM",
-          "details": "Tworzyłem i zarządzałem kompilowalnymi paczkami NPM na wewnętrzne potrzeby organizacji"
+          "details": "I created and managed NPM packages for internal company purposes"
         },
         { "name": "ESlint" },
         { "name": "Webpack" },
@@ -177,46 +228,47 @@
         { "name": "Windows" },
         { "name": "Linux" },
         { "name": "OSX" },
+        { "name": "Wordpress" },
         { "name": "Rollup" }
       ]
     },
     "languages": {
-      "title": "Języki",
+      "title": "Languages",
       "entries": [
         {
-          "name": "polski",
+          "name": "polish",
           "level": "native"
         },
         {
-          "name": "angielski",
+          "name": "english",
           "level": "B2"
         }
       ]
     },
     "other": {
-      "title": "Inne",
-      "entries": ["Prawo jazdy kategorii B"]
+      "title": "Other",
+      "entries": ["Driving license cat. B"]
     },
     "soft": {
-      "title": "Umiejętności miękkie",
+      "title": "Soft skills",
       "entries": [
-        "👌 Dbałość o szczegóły",
-        "💡 Kreatywność",
-        "🔍 Analityczny umysł",
-        "🎖️ Zaangażowanie",
-        "🤝 Praca zespołowa",
-        "📖 Chęć rozwoju",
-        "🧍‍♂️Samodzielność",
-        "😅 Poczucie humoru"
+        "👌 Detail oriented",
+        "💡 Creativity",
+        "🔍 Analytical mind",
+        "🎖️ Commitment",
+        "🤝 Teamwork skills",
+        "📖 Eagerness to learn",
+        "🧍‍♂️ Self-reliance",
+        "😅 Sense of humour"
       ]
     },
     "interests": {
-      "title": "Zainteresowania",
+      "title": "Interests",
       "entries": [
-        "🧭 Podróże",
-        "🎲 Gry planszowe",
-        "⛰️ Trekking górski",
-        "📷 Fotografia"
+        "🧭 Traveling",
+        "🎲 Board games",
+        "⛰️ Mountain hiking",
+        "📷 Photography"
       ]
     }
   },

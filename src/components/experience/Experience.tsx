@@ -13,8 +13,19 @@ export const Experience = () => {
         {experience.entries.map((entry, index) => (
           <TimelineItem key={index} start={entry.start} end={entry.end}>
             <div className={styles.entry}>
-              <strong>{entry.company}</strong> <i>{entry.job}</i>
-              <Description description={entry.description} />
+              <strong>
+                {entry.url ? (
+                  <a href={entry.url} target="blank">
+                    {entry.company}
+                  </a>
+                ) : (
+                  entry.company
+                )}
+              </strong>{' '}
+              <i>{entry.job}</i>
+              <div>
+                <Description description={entry.description} />
+              </div>
             </div>
           </TimelineItem>
         ))}

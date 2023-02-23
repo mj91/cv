@@ -2,8 +2,9 @@
 
 .tech {
   display: grid;
-  grid-template-columns: 5fr repeat(5, 2fr);
+  grid-template-columns: 5fr repeat(5, 3fr);
   grid-column-gap: 2px;
+  grid-row-gap: 0.5rem;
   grid-template-rows: auto;
   align-items: center;
 
@@ -79,5 +80,5 @@
 
 .languages {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
 }
