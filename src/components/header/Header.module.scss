@@ -7,9 +7,9 @@
   grid-auto-flow: column;
   grid-template:
     'photo . actions' 2fr
-    'photo . .' 1fr
-    'photo . .' 1fr
-    'photo . .' 1fr / max-content auto min-content;
+    'photo . actions' 1fr
+    'photo . actions' 1fr
+    'photo . actions' 1fr / max-content auto min-content;
   gap: 1rem 2rem;
   margin-bottom: 3rem;
 
@@ -49,7 +49,7 @@
 
     user-select: none;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     > * {
       text-align: center;
       cursor: pointer;
