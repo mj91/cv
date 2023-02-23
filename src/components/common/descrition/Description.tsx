@@ -29,5 +29,5 @@ export const Description = ({
 }: {
   description?: DescriptionType
 }) => {
-  return <div>{createDescriptionElement(description)}</div>
+  return <>{createDescriptionElement(description)}</>
 }
