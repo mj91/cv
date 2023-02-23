@@ -6,12 +6,12 @@
   display: grid;
   grid-auto-flow: column;
   grid-template:
-    'photo . actions' 2fr
+    'photo . actions' 3fr
     'photo . actions' 1fr
     'photo . actions' 1fr
     'photo . actions' 1fr / max-content auto min-content;
   gap: 1rem 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 
   > div {
     @include typography.typography(18, 400);
@@ -21,7 +21,7 @@
     grid-area: photo;
     border: solid 0.75rem colors.$primary;
     border-radius: 0.75rem;
-    max-width: 16rem;
+    max-width: 14rem;
   }
 
   .qr {

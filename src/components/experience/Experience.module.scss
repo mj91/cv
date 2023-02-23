@@ -2,6 +2,7 @@
 @use 'styles/typography.scss' as typography;
 
 .experience {
+  margin-bottom: -1rem;
   a {
     color: colors.$primary;
   }
