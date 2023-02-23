@@ -5,7 +5,7 @@ export const QrCode = () => {
   const [qr, setQr] = useState<string>()
 
   useEffect(() => {
-    QRCode.toDataURL('http://192.168.1.109:3000').then(setQr)
+    QRCode.toDataURL(window.location.href).then(setQr)
   }, [])
 
   return (
