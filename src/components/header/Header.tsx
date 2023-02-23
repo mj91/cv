@@ -32,9 +32,9 @@ export const Header = () => {
         <QrCode />
       </div>
       <div className={styles.actions}>
-        <a className={styles.print} href="javascript:window.print()">
+        <span className={styles.print} onClick={window.print}>
           🖨️
-        </a>
+        </span>
         <Theme />
         <Language />
       </div>
