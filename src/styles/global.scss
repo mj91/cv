@@ -1,4 +1,5 @@
 @use 'styles/colors.scss' as colors;
+@use 'styles/breakpoints.scss' as breakpoints;
 @use 'styles/typography.scss' as typography;
 
 @include typography.global;
@@ -23,5 +24,10 @@ body {
 
   @media print {
     padding: 0;
+  }
+
+  @include breakpoints.medium {
+    width: 100%;
+    height: auto;
   }
 }

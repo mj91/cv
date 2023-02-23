@@ -1,11 +1,15 @@
 @use 'styles/colors.scss' as colors;
 @use 'styles/typography.scss' as typography;
+@use 'styles/breakpoints.scss' as breakpoints;
 
 .header {
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: max-content auto min-content;
-  grid-template-rows: 2fr repeat(3, 1fr);
+  grid-template:
+    'photo . actions' 2fr
+    'photo . .' 1fr
+    'photo . .' 1fr
+    'photo . .' 1fr / max-content auto min-content;
   gap: 1rem 2rem;
   margin-bottom: 3rem;
 
@@ -14,14 +18,14 @@
   }
 
   img.photo {
+    grid-area: photo;
     border: solid 0.75rem colors.$primary;
     border-radius: 0.75rem;
     max-width: 16rem;
-    grid-row-end: span 4;
   }
 
   .qr {
-    grid-row-end: span 4;
+    grid-area: actions;
     width: 16rem;
     display: none;
     text-align: center;
@@ -36,6 +40,9 @@
   }
 
   .actions {
+    grid-area: actions;
+    justify-content: flex-end;
+
     @media print {
       display: none;
     }
@@ -49,5 +56,17 @@
       font-size: 3rem;
       width: 5rem;
     }
+  }
+
+  @include breakpoints.small {
+    justify-items: center;
+    grid-template:
+      'photo' auto
+      '.' 2fr
+      '.' 1fr
+      '.' 1fr
+      '.' 1fr
+      'actions' 5rem / 100%;
+    margin-bottom: 1rem;
   }
 }
