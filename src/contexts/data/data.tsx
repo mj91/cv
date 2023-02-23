@@ -50,6 +50,7 @@ const noData: Data = {
       entries: [],
     },
   },
+  info: '',
   consent: '',
 }
 

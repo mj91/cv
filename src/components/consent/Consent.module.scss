@@ -1,0 +1,7 @@
+.consent {
+  @media print {
+    a {
+      display: none;
+    }
+  }
+}

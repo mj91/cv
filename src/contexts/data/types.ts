@@ -50,7 +50,7 @@ export type Data = {
       entries: string[]
     }
   }
-
+  info: string
   consent: string
 }
 
