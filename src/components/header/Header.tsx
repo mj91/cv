@@ -3,6 +3,7 @@ import { useData } from '../../contexts/data'
 import { Language } from './actions/language/Language'
 import { Theme } from './actions/theme/Theme'
 import styles from './Header.module.scss'
+import { QrCode } from './qr-code/QrCode'
 
 export const Header = () => {
   const data = useData()
@@ -26,6 +27,9 @@ export const Header = () => {
       </div>
       <div>
         📞 <a href={`tel:${data.phone.replaceAll(' ', '')}`}>{data.phone}</a>
+      </div>
+      <div className={styles.qr}>
+        <QrCode />
       </div>
       <div className={styles.actions}>
         <a className={styles.print} href="javascript:window.print()">
