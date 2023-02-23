@@ -1,6 +1,6 @@
 import { useData } from '../../contexts/data'
 import { Timeline, TimelineItem } from '../common/timeline/Timeline'
-import { TimelineEntryDescription } from '../common/timeline/TimelineEntryDescription'
+import { Description } from '../common/descrition/Description'
 import styles from './Experience.module.scss'
 
 export const Experience = () => {
@@ -14,7 +14,7 @@ export const Experience = () => {
           <TimelineItem key={index} start={entry.start} end={entry.end}>
             <div className={styles.entry}>
               <strong>{entry.company}</strong> <i>{entry.job}</i>
-              <TimelineEntryDescription description={entry.description} />
+              <Description description={entry.description} />
             </div>
           </TimelineItem>
         ))}

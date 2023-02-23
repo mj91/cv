@@ -53,19 +53,19 @@ export type Data = {
   consent: string
 }
 
-export type TimelineEntryDescription =
+export type Description =
   | string
   | {
       type: Parameters<typeof createElement>[0]
       props?: Parameters<typeof createElement>[1]
-      children?: TimelineEntryDescription
+      children?: Description
     }
-  | TimelineEntryDescription[]
+  | Description[]
 
 export type TimelineEntry = {
   start?: string | number
   end?: string | number
-  description?: TimelineEntryDescription
+  description?: Description
 }
 
 export type ExperienceEntry = TimelineEntry & {

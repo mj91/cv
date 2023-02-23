@@ -1,6 +1,6 @@
 import { useData } from '../../contexts/data'
 import { Timeline, TimelineItem } from '../common/timeline/Timeline'
-import { TimelineEntryDescription } from '../common/timeline/TimelineEntryDescription'
+import { Description } from '../common/descrition/Description'
 import styles from './Education.module.scss'
 
 export const Education = () => {
@@ -15,7 +15,7 @@ export const Education = () => {
               <strong>{entry.school}</strong>
               <br />
               <i>{entry.faculty}</i>
-              <TimelineEntryDescription description={entry.description} />
+              <Description description={entry.description} />
             </div>
           </TimelineItem>
         ))}
