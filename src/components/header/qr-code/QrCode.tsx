@@ -1,4 +1,3 @@
-import { useLanguage } from 'contexts/language'
 import QRCode from 'qrcode'
 import { useState, useEffect, useCallback } from 'react'
 
