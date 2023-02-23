@@ -2,7 +2,8 @@ import { createElement } from 'react'
 import { TimelineEntryDescription as Description } from '../../../contexts/data'
 
 const createTimelineDescriptionElement = (
-  description?: Description
+  description?: Description,
+  index?: number
 ): JSX.Element | null => {
   if (!description) return null
 
@@ -14,7 +15,7 @@ const createTimelineDescriptionElement = (
   if (description.type)
     return createElement(
       description.type,
-      description.props,
+      { key: index, ...description.props },
       Array.isArray(description.children)
         ? description.children.map(createTimelineDescriptionElement)
         : createTimelineDescriptionElement(description.children)
