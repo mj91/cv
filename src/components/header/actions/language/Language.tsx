@@ -5,15 +5,15 @@ import styles from './Language.module.scss'
 const LANGUAGES = ['PL', 'EN']
 
 export const Language = () => {
-  const language = useLanguage()
+  const { language, setLanguage } = useLanguage()
 
   const languages = language === 'en' ? [...LANGUAGES].reverse() : LANGUAGES
 
-  const handleClick = useCallback(() => {
-    window.location.href = `?lang=${language == 'en' ? 'pl' : 'en'}`
-  }, [language])
+  const handleClick = useCallback(
+    () => setLanguage(language === 'en' ? 'pl' : 'en'),
+    [language, setLanguage]
+  )
 
-  console.log(language, languages)
   return (
     <div className={styles.language} onClick={handleClick}>
       🌐

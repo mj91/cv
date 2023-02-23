@@ -1,5 +1,5 @@
 import { createElement } from 'react'
-import { TimelineEntryDescription as Description } from '../../../contexts/types'
+import { TimelineEntryDescription as Description } from '../../../contexts/data'
 
 const createTimelineDescriptionElement = (
   description?: Description

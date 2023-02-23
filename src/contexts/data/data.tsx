@@ -6,7 +6,7 @@ import {
   useEffect,
   useState,
 } from 'react'
-import { useLanguage } from './language'
+import { useLanguage } from '../language'
 import { Data } from './types'
 
 const noData: Data = {
@@ -57,12 +57,12 @@ const DataContext = createContext<Data>(noData)
 export const useData = () => useContext(DataContext)
 
 export const DataProvider: FC<PropsWithChildren> = ({ children }) => {
-  const language = useLanguage()
+  const { language } = useLanguage()
   const [data, setData] = useState<Data>(noData)
 
   useEffect(() => {
-    import(`data/${language}.json`).then((data) => {
-      setData(data)
+    import(`../../data/${language}.json`).then((data) => {
+      setData(data as Data)
     })
   }, [language])
 

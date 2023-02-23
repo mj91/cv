@@ -7,7 +7,7 @@ import { QrCode } from './qr-code/QrCode'
 
 export const Header = () => {
   const data = useData()
-  const language = useLanguage()
+  const { language } = useLanguage()
 
   return (
     <div className={styles.header}>
