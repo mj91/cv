@@ -1,14 +1,17 @@
 import { useLanguage } from 'contexts/language'
 import QRCode from 'qrcode'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 
 export const QrCode = () => {
-  const { language } = useLanguage()
   const [qr, setQr] = useState<string>()
+  const generateQrCode = useCallback(async () => {
+    setQr(await QRCode.toDataURL(window.location.href))
+  }, [])
 
   useEffect(() => {
-    QRCode.toDataURL(window.location.href).then(setQr)
-  }, [language])
+    addEventListener('beforeprint', generateQrCode)
+    return () => removeEventListener('beforeprint', generateQrCode)
+  }, [generateQrCode])
 
   return (
     <>
