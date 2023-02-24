@@ -11,7 +11,7 @@ export const Header = () => {
 
   return (
     <div className={styles.header}>
-      <img className={styles.photo} src="photo.png" alt={data.name} />
+      <img className={styles.photo} src="./photo.png" alt={data.name} />
       <h1>{data.name}</h1>
       <div>
         ⭐{' '}
