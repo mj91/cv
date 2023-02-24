@@ -12,11 +12,17 @@ const createHandleToggleFunction =
     setState(event.currentTarget.checked)
 
 export const CookiesBar = () => {
-  const [functional, setFunctional] = useState(true)
-  const [analytics, setAnalytics] = useState(true)
-  const [isAlreadySet, setAlreadySet] = useState(false)
+  const cookiesConsent = useCookiesConsent()
+  const [functional, setFunctional] = useState(
+    cookiesConsent.isAlreadySet ? cookiesConsent.functional : true
+  )
+  const [analytics, setAnalytics] = useState(
+    cookiesConsent.isAlreadySet ? cookiesConsent.analytics : true
+  )
+  const [isAlreadySet, setAlreadySet] = useState(
+    cookiesConsent.isAlreadySet ? cookiesConsent.isAlreadySet : false
+  )
   const { cookies } = useData()
-  const { allow, deny } = useCookiesConsent()
 
   const handleToggleFunctional = useCallback(
     createHandleToggleFunction(setFunctional),
@@ -29,12 +35,12 @@ export const CookiesBar = () => {
 
   const handleDeny = useCallback(() => {
     setAlreadySet(true)
-    deny()
+    cookiesConsent.deny()
   }, [])
 
   const handleAllow = useCallback(() => {
     setAlreadySet(true)
-    allow({ functional, analytics })
+    cookiesConsent.allow({ functional, analytics })
   }, [])
 
   const showCookiesConsent = useCallback(() => setAlreadySet(false), [])
@@ -75,6 +81,6 @@ export const CookiesBar = () => {
         </div>
       </div>
     ),
-    document.getElementsByTagName('html')[0]
+    document.body
   )
 }

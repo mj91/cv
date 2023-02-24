@@ -3,6 +3,7 @@ import {
   FC,
   PropsWithChildren,
   useContext,
+  useEffect,
   useState,
 } from 'react'
 
@@ -14,12 +15,12 @@ const defaultCookiesConsent = {
 const get = () => {
   const cookies = localStorage.getItem('cookies')
 
-  if (!cookies) return defaultCookiesConsent
+  if (!cookies) return { ...defaultCookiesConsent, isAlreadySet: false }
 
   try {
-    return JSON.parse(cookies)
+    return { ...JSON.parse(cookies), isAlreadySet: true }
   } catch {
-    return defaultCookiesConsent
+    return { ...defaultCookiesConsent, isAlreadySet: false }
   }
 }
 
@@ -47,6 +48,7 @@ const allow = ({
 
 const CookiesConsentContext = createContext({
   ...defaultCookiesConsent,
+  isAlreadySet: false,
   get,
   allow,
   deny,

@@ -18,6 +18,7 @@
   background-color: colors.$background;
   box-shadow: 0 0 2rem -1rem colors.$primary;
   padding: 1.5rem;
+  margin: 0 -5rem;
 
   &,
   & > div {
@@ -66,7 +67,7 @@
 }
 
 .icon {
-  margin: 0;
+  margin: 5rem -5rem;
   padding: 0;
   height: 0;
 
@@ -74,12 +75,16 @@
     cursor: pointer;
     content: '🍪';
     position: absolute;
-    height: auto;
-    bottom: 2rem;
-    left: 2rem;
+    height: 1.4rem;
+    width: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.8rem;
+    left: 0.8rem;
     padding: 1rem;
     background-color: colors.$background;
-    box-shadow: 0 0 2rem -1rem colors.$primary;
+    box-shadow: 0 0 2rem -0.4rem colors.$primary;
     border-radius: 50%;
   }
 }
