@@ -54,7 +54,8 @@
 }
 
 .experience {
-  word-break: break-word;
+  display: flex;
+  flex-wrap: wrap;
 
   > span {
     white-space: nowrap;
