@@ -273,5 +273,13 @@
     }
   },
   "info": "Source code of this document on GitHub.",
+  "cookies": {
+    "description": "This website uses cookies and other technologies for functional and analytics purposes.",
+    "necessary": "Necessary",
+    "functional": "Functional",
+    "analytics": "Analytics",
+    "deny": "Deny",
+    "allow": "Allow"
+  },
   "consent": "I hereby consent to my personal data being processed for the purpose of considering my application."
 }

@@ -6,19 +6,24 @@ import { Education } from './components/education/Education'
 import { Skills } from './components/skills/Skills'
 import { Consent } from './components/consent/Consent'
 import { LanguageProvider } from 'contexts/language'
+import { CookiesBar } from 'components/cookies-bar/CookiesBar'
+import { CookiesConsentProvider } from 'contexts/cookies-consent/cookies-consent'
 
 export const App = () => {
   return (
-    <div className={styles.content}>
+    <CookiesConsentProvider>
       <LanguageProvider>
         <DataProvider>
-          <Header />
-          <Experience />
-          <Education />
-          <Skills />
-          <Consent />
+          <div className={styles.content}>
+            <Header />
+            <Experience />
+            <Education />
+            <Skills />
+            <Consent />
+          </div>
+          <CookiesBar />
         </DataProvider>
       </LanguageProvider>
-    </div>
+    </CookiesConsentProvider>
   )
 }

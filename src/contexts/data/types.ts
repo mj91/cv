@@ -51,6 +51,14 @@ export type Data = {
     }
   }
   info: string
+  cookies: {
+    description: string
+    necessary: string
+    functional: string
+    analytics: string
+    deny: string
+    allow: string
+  }
   consent: string
 }
 

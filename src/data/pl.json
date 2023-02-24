@@ -270,5 +270,13 @@
     }
   },
   "info": "Kod źródłowy tego CV w serwisie GitHub.",
+  "cookies": {
+    "description": "Ta strona używa plików cookie i innych technologii w celach funkcjonalnych i analitycznych.",
+    "necessary": "Niezbędne",
+    "functional": "Funkcjonalne",
+    "analytics": "Analityczne",
+    "deny": "Odrzuć",
+    "allow": "Zaakceptuj"
+  },
   "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych w celu prowadzenia rekrutacji na aplikowane przeze mnie stanowisko."
 }
