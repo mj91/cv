@@ -3,10 +3,8 @@ import {
   FC,
   PropsWithChildren,
   useContext,
-  useEffect,
   useState,
 } from 'react'
-import ReactGA from 'react-ga4'
 
 const defaultCookiesConsent = {
   functional: false,
@@ -59,10 +57,6 @@ export const useCookiesConsent = () => useContext(CookiesConsentContext)
 
 export const CookiesConsentProvider: FC<PropsWithChildren> = ({ children }) => {
   const [cookiesConsent, setCookiesConsent] = useState(get())
-
-  useEffect(() => {
-    if (cookiesConsent.analytics) ReactGA.initialize('G-5K91DXG3PC')
-  }, [cookiesConsent.analytics])
 
   const allowCookies: typeof allow = (selection) => {
     allow(selection)
