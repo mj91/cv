@@ -20,7 +20,7 @@ export const Theme = () => {
     document.documentElement.dataset.theme = isDark ? 'light' : 'dark'
 
     if (functional) localStorage.setItem('theme', isDark ? 'light' : 'dark')
-  }, [])
+  }, [functional])
 
   return <div onClick={toggleTheme}>🌓</div>
 }
