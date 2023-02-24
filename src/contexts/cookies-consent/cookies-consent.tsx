@@ -23,7 +23,14 @@ const get = () => {
   }
 }
 
-const deny = () => localStorage.removeItem('cookies')
+const deny = () => {
+  localStorage.clear()
+  document.cookie.split(';').forEach(function (c) {
+    document.cookie = c
+      .replace(/^ +/, '')
+      .replace(/=.*/, '=;expires=' + new Date().toUTCString() + ';path=/')
+  })
+}
 
 const allow = ({
   functional,
