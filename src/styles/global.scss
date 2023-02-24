@@ -17,19 +17,24 @@ body {
   transition: margin 300ms, background 300ms;
   overflow: overlay;
 
-  @media screen and (min-width: 1080px) {
-    margin: 4rem auto;
-    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
-  }
+  margin: 4rem auto;
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
 
-  @media print {
-    width: 90rem;
-    height: 131.4rem;
-    padding: 0;
+  @include breakpoints.large {
+    margin: 0;
+    box-shadow: none;
   }
 
   @include breakpoints.medium {
     width: 100%;
     height: auto;
+  }
+
+  @media print {
+    margin: 0;
+    box-shadow: none;
+    width: 90rem;
+    height: 131.4rem;
+    padding: 0;
   }
 }

@@ -13,14 +13,11 @@
 
 @mixin global {
   html {
-    font-size: 1vw;
+    font-family: 'Roboto';
+    font-size: 10px;
 
-    @media screen and (min-width: 1080px) {
-      font-size: 10px;
-    }
-
-    @media print {
-      font-size: 2.1mm;
+    @include breakpoints.large {
+      font-size: 1vw;
     }
 
     @include breakpoints.medium {
@@ -29,6 +26,10 @@
 
     @include breakpoints.small {
       font-size: 2vw;
+    }
+
+    @media print {
+      font-size: 2.1mm;
     }
   }
 
