@@ -1,4 +1,6 @@
+import { useAnalytics } from 'contexts/analytics/analytics'
 import { useLanguage } from 'contexts/language'
+import { useCallback } from 'react'
 import { useData } from '../../contexts/data'
 import { Language } from './actions/language/Language'
 import { Theme } from './actions/theme/Theme'
@@ -7,7 +9,13 @@ import { QrCode } from './qr-code/QrCode'
 
 export const Header = () => {
   const data = useData()
+  const { track } = useAnalytics()
   const { language } = useLanguage()
+
+  const handlePrint = useCallback(() => {
+    track('print')
+    window.print()
+  }, [track])
 
   return (
     <div className={styles.header}>
@@ -32,7 +40,7 @@ export const Header = () => {
         <QrCode />
       </div>
       <div className={styles.actions}>
-        <span className={styles.print} onClick={window.print}>
+        <span className={styles.print} onClick={handlePrint}>
           🖨️
         </span>
         <Theme />
