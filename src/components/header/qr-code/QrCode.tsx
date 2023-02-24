@@ -5,7 +5,9 @@ export const QrCode = () => {
   const [qr, setQr] = useState<string>()
 
   const generateQrCode = useCallback(async () => {
-    setQr(await QRCode.toDataURL(window.location.href))
+    const url = new URL(window.location.href)
+    url.searchParams.set('utm_medium', 'qr')
+    setQr(await QRCode.toDataURL(url.toString()))
   }, [])
 
   useEffect(() => {
