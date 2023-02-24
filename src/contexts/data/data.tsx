@@ -9,58 +9,20 @@ import {
 import { useLanguage } from '../language'
 import { Data } from './types'
 
-const noData: Data = {
-  name: '',
-  birthdate: '',
-  email: '',
-  phone: '',
-  experience: {
-    title: '',
-    entries: [],
-  },
-  education: {
-    title: '',
-    entries: [],
-  },
-  skills: {
-    title: '',
-    tech: {
-      title: '',
-      description: '',
-      entries: [],
-    },
-    experience: {
-      title: '',
-      entries: [],
-    },
-    languages: {
-      title: '',
-      entries: [],
-    },
-    other: {
-      title: '',
-      entries: [],
-    },
-    soft: {
-      title: '',
-      entries: [],
-    },
-    interests: {
-      title: '',
-      entries: [],
-    },
-  },
-  info: '',
-  consent: '',
+const DataContext = createContext<Data | undefined>(undefined)
+
+export const useData = () => {
+  const data = useContext(DataContext)
+
+  if (!data)
+    throw new Error('useData can be only used in scope of DataProvider')
+
+  return data
 }
-
-const DataContext = createContext<Data>(noData)
-
-export const useData = () => useContext(DataContext)
 
 export const DataProvider: FC<PropsWithChildren> = ({ children }) => {
   const { language } = useLanguage()
-  const [data, setData] = useState<Data>(noData)
+  const [data, setData] = useState<Data>()
 
   useEffect(() => {
     import(`../../data/${language}.json`).then((data) => {
@@ -68,7 +30,7 @@ export const DataProvider: FC<PropsWithChildren> = ({ children }) => {
     })
   }, [language])
 
-  return (
+  return !data ? null : (
     <DataContext.Provider value={data as Data}>{children}</DataContext.Provider>
   )
 }
