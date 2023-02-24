@@ -8,7 +8,11 @@ import {
 } from 'react'
 import ReactGA from 'react-ga4'
 
-const AnalyticsContext = createContext({})
+const defaultTrack = (...args: Parameters<typeof ReactGA.event>) => {
+  return
+}
+
+const AnalyticsContext = createContext({ track: defaultTrack })
 
 export const useAnalytics = () => useContext(AnalyticsContext)
 
@@ -19,7 +23,11 @@ export const AnalyticsProvider: FC<PropsWithChildren> = ({ children }) => {
     if (analytics) ReactGA.initialize('G-5K91DXG3PC')
   }, [analytics])
 
+  const track = analytics ? ReactGA.event : defaultTrack
+
   return (
-    <AnalyticsContext.Provider value={{}}>{children}</AnalyticsContext.Provider>
+    <AnalyticsContext.Provider value={{ track }}>
+      {children}
+    </AnalyticsContext.Provider>
   )
 }
