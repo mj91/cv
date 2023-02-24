@@ -1,8 +1,10 @@
-html,
-html[data-theme='dark'] {
-  --primary: white;
-  --secondary: #48f;
-  --secondary-highlight: #5af;
-  --background: black;
-  --background-outer: #222;
+@media screen {
+  html,
+  html[data-theme='dark'] {
+    --primary: white;
+    --secondary: #48f;
+    --secondary-highlight: #5af;
+    --background: black;
+    --background-outer: #222;
+  }
 }
