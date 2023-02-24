@@ -1,3 +1,4 @@
+import { useCookiesConsent } from 'contexts/cookies-consent/cookies-consent'
 import {
   createContext,
   useContext,
@@ -22,6 +23,14 @@ const getLanguageFromURL: GetLanguage = (url?: URL | string | null) => {
   return searchParams?.get('lang') === 'en' ? 'en' : 'pl'
 }
 
+const getLanguageFromLocalStorage = (): Language | undefined => {
+  const language = localStorage.getItem('language')
+  if (language === 'pl' || language === 'en') return language
+  return undefined
+}
+const setLanguageInLocalStorage = (language: Language): void =>
+  localStorage.setItem('language', language)
+
 const LanguageContext = createContext<{
   language: Language
   setLanguage: SetLanguage
@@ -30,7 +39,10 @@ const LanguageContext = createContext<{
 export const useLanguage = () => useContext(LanguageContext)
 
 export const LanguageProvider: FC<PropsWithChildren> = ({ children }) => {
-  const [language, setLanguage] = useState(getLanguageFromURL())
+  const { functional } = useCookiesConsent()
+  const [language, setLanguage] = useState(
+    getLanguageFromLocalStorage() || getLanguageFromURL()
+  )
 
   useEffect(() => {
     ;(function (history) {
@@ -43,8 +55,13 @@ export const LanguageProvider: FC<PropsWithChildren> = ({ children }) => {
   }, [])
 
   useEffect(() => {
+    if (functional) setLanguageInLocalStorage(language)
     setLanguageInURL(language)
-  }, [language])
+  }, [language, functional])
+
+  useEffect(() => {
+    if (functional) localStorage.setItem('language', language)
+  }, [functional, language])
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
