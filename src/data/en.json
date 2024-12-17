@@ -7,6 +7,30 @@
     "title": "Work experience",
     "entries": [
       {
+        "start": "2022",
+        "end": "now",
+        "company": "Egnyte",
+        "url": "https://egnyte.com",
+        "job": "Senior Software Engineer",
+        "stack": [
+          "NodeJS",
+          "NestJS",
+          "React",
+          "TypeScript",
+          "Docker",
+          "Jenkins",
+          "MS Graph API",
+          "MS Teams",
+          "Copilot"
+        ],
+        "description": [
+          {
+            "type": "div",
+            "children": "Development of software integrations with other applications"
+          }
+        ]
+      },
+      {
         "start": "2020",
         "end": "2022",
         "company": "Packhelp",
@@ -171,6 +195,7 @@
       "entries": [
         { "name": "React", "level": 5 },
         { "name": "Next.js", "level": 2 },
+        { "name": "NestJS", "level": 2 },
         { "name": "HTML/CSS", "level": 4 },
         { "name": "JavaScript", "level": 4 },
         { "name": "TypeScript", "level": 4 },
@@ -198,6 +223,7 @@
           "details": "incl. GitHub Actions, GitHub Packages"
         },
         { "name": "Gitlab", "details": "incl. Gitlab Pipelines" },
+        { "name": "Jenkins" },
         {
           "name": "NPM",
           "details": "I created and managed NPM packages for internal company purposes"
